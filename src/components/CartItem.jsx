@@ -7,10 +7,14 @@ import { cartState } from './context/Context';
 
 const CartItem = ({prod}) => {
 
+ 
+
     const {
         state: { cart },
         dispatch,
       } = cartState();
+
+   
   return (
     <>
        <div className="products">

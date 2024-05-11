@@ -13,18 +13,20 @@ import {
 import { Link, useLocation } from "react-router-dom";
 // import { CartState } from "../context/Context";
 import "./styles.css";
+import { cartState } from './context/Context';
+
 
 const Header = () => {
 
-// const {
-//     state: { cart },
-//     dispatch,
-//     productDispatch,
-//   } = CartState();
+const {
+    state: { cart },
+    dispatch,
+    // productDispatch,
+  } = cartState();
 
-const cart=[]
+// const cart=[]
 
-const dispatch=()=>{}
+
 const productDispatch=()=>{}
 
   return (
@@ -64,13 +66,13 @@ const productDispatch=()=>{}
                   {cart.map((prod) => (
                     <span className="cartitem" key={prod.id}>
                       <img
-                        // src={prod.image}
+                        src={prod.image}
                         className="cartItemImg"
-                        // alt={prod.name}
+                        alt={prod.name}
                       />
                       <div className="cartItemDetail">
-                        {/* <span>{prod.name}</span> */}
-                        {/* <span>₹ {prod.price.split(".")[0]}</span> */}
+                        <span>{prod.name}</span>
+                        <span>₹ {prod.price.split(".")[0]}</span>
                       </div>
                       <AiFillDelete
                         fontSize="20px"
