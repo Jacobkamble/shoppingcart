@@ -1,5 +1,5 @@
 React Shopping Cart Project
-This is a shopping cart application built using React, showcasing fundamental concepts of modern web development. The project utilizes React hooks, context API for state management, and local storage for persisting cart data.
+This is a shopping cart application built using React, showcasing fundamental concepts of modern web development. The project utilizes React hooks, context API for state management.
 
 Features
 Product Listing: Display a list of products with details such as name, price, and image.
@@ -10,7 +10,7 @@ Technologies Used
 React: Frontend library for building user interfaces.
 React Router: For routing within the application.
 Context API: For managing global state related to the shopping cart.
-Local Storage: Used to persist the shopping cart data locally.
+
 
 How to Run
 Clone this repository.

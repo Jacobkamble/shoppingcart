@@ -21,13 +21,13 @@ const Header = () => {
 const {
     state: { cart },
     dispatch,
-    // productDispatch,
+    productDispatch,
   } = cartState();
 
 // const cart=[]
 
 
-const productDispatch=()=>{}
+
 
   return (
     <>
